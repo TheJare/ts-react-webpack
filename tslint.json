@@ -1,0 +1,9 @@
+{
+    "extends": "tslint:recommended",
+    "rules": {
+        "comment-format": [ true, "check-space" ],
+        "semicolon": [ true, "never" ],
+        "trailing-comma": [ false ],
+        "no-unused-variable": [ true, {"ignore-pattern": "^React$"} ]
+    }
+}

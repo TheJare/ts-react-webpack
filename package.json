@@ -1,0 +1,30 @@
+{
+  "name": "ts-react-webpack",
+  "version": "0.1.0",
+  "description": "A simple Typescript + ReactJS + Webpack example",
+  "license": "MIT",
+  "author": {
+    "name": "Javier Arevalo",
+    "url": "https://TheJare.github.io"
+  },
+  "repository": {
+    "url": "https://github.com/TheJare/ts-react-webpack"
+  },
+  "scripts": {
+    "build": "webpack",
+    "serve": "webpack-dev-server --open --watch"
+  },
+  "devDependencies": {
+    "@types/react": "^15.0.22",
+    "@types/react-dom": "^15.5.0",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "uglify-js": "^2.8.22",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.3"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
