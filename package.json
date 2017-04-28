@@ -11,7 +11,7 @@
     "url": "https://github.com/TheJare/ts-react-webpack"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --optimize-minimize",
     "serve": "webpack-dev-server --open --watch"
   },
   "devDependencies": {

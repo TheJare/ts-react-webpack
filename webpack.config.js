@@ -19,15 +19,14 @@ module.exports = {
         exclude: /node_modules/,
         use: [ { loader: "ts-loader" } ]
       }
-    ]
+    ],
+    // Do not parse react modules
+    noParse: [ /^react$/, /^react-dom$/ ],
   },
-
-  plugins: [
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compress: {
-    //     warnings: false,
-    //     drop_console: false,
-    //   }
-    // }),
-  ],
+  externals: {
+      // Use external version of react modules (in HTML script) 
+      "react": "React",
+      "react-dom": "ReactDOM"
+  },
+  devtool: "source-map",
 };
